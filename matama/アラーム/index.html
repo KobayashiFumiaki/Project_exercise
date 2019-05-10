@@ -1,0 +1,93 @@
+﻿<html>
+    <head>
+        <title>アラーム</title>
+        <link rel="shortcut icon" href="https://cdn-ak2.f.st-hatena.com/images/fotolife/m/myprogramming/20170719/20170719111316.png">
+    </head>
+    <body>
+        <input type="checkbox" id="checkbox"> アラームをセット
+        <br>
+        <select id="hour"></select>時
+        <select id="minute"></select>分
+        <br>
+        <input type="button" value="設定を保存" onclick="setting_save()">
+        <div id="alarm_dialog" style="display: none;">
+            セットした時刻になりました
+            <input type="button" value="アラームを止める" onclick="alarm_stop()">
+        </div>
+        <audio src="sound.mp3" id="sound"></audio>
+        
+        <script>
+            var checkbox = document.getElementById("checkbox");
+            var hour = document.getElementById("hour");
+            var minute = document.getElementById("minute");
+            var select_option;
+            var alarm_set = false;
+            var alarm_set2 = false;
+            var alarm_hour = 0;
+            var alarm_minute = 0;
+            var alarm_dialog = document.getElementById("alarm_dialog");
+            var sound = document.getElementById("sound");
+
+            var time = new Date;
+
+            select_option = "";
+            for (var i=0; i<=23; i++) {
+                if (i == time.getHours()) {
+                    select_option += "<option value='"+i+"' selected>"+i+"</option>";
+                } else {
+                    select_option += "<option value='"+i+"'>"+i+"</option>";
+                }
+            }
+            hour.innerHTML = select_option;
+
+            select_option = "";
+            for (var i=0; i<=59; i++) {
+                if (i == time.getMinutes()) {
+                    select_option += "<option value='"+i+"' selected>"+i+"</option>";
+                } else {
+                    select_option += "<option value='"+i+"'>"+i+"</option>";
+                }
+            }
+            minute.innerHTML = select_option;
+
+            function setting_save() {
+                alarm_set = checkbox.checked;
+                alarm_set2 = checkbox.checked;
+                alarm_hour = Number(hour.value);
+                alarm_minute = Number(minute.value);
+
+                if (alarm_set) {
+                    sound.load();
+                }
+
+                alert("設定を保存しました");
+            }
+
+            function alarm_stop() {
+                alarm_dialog.style.display = "none";
+                sound.pause();
+                sound.currentTime = 0;
+            }
+
+            sound.onended = function() {
+                alarm_stop();
+            };
+
+            function main() {
+                var time = new Date;
+
+                if (alarm_set && alarm_hour == time.getHours() && alarm_minute == time.getMinutes()) {
+                    sound.play();
+                    alarm_set = false;
+                    alarm_dialog.style.display = "block";
+                } else if (alarm_set2 && alarm_minute != time.getMinutes()) {
+                    alarm_set = true;
+                }
+
+                setTimeout(main, 1000-time.getMilliseconds());
+            }
+
+            main();
+        </script>
+    </body>
+</html>
