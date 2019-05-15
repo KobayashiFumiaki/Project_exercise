@@ -10,7 +10,9 @@ var proc={
   },
   click:function(e){
     var t = document.getElementById("formula");
-    if(t==null){return}
+    if(t==null){
+      return
+    }
     if(e.innerHTML==""){return}
 
     //数字
