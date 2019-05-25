@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <title>連絡帳</title>
+        <title>連絡帳[検索結果画面]</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     </head>
+    
     <body>
         <?php
         $db_user = "root";    //ユーザー名
@@ -12,6 +15,7 @@
         $db_type = "mysql";     //データベースの種類
         
         $dsn = "$db_type:host=$db_host;dbname=$db_name;charset=utf8";
+
         
         try {
             $pdo = new PDO($dsn, $db_user, $db_pass);
@@ -51,6 +55,7 @@
                     <th>name</th>
                     <th>email address</th>                    
                     <th>phone number</th> 
+                    <th>delete</th>
                 </tr>
             <?php
             while($row=$stmh->fetch(PDO::FETCH_ASSOC)){
@@ -60,6 +65,8 @@
                 <td><?=htmlspecialchars($row['name'], ENT_QUOTES)?></td>
                 <td><?=htmlspecialchars($row['email_address'], ENT_QUOTES)?></td>
                 <td><?=htmlspecialchars($row['phone_number'], ENT_QUOTES)?></td>
+                <td><a href ="dele.php?&id = $row['id']">[削除]</a></td>
+                
             </tr>
             <?php
             }
@@ -69,7 +76,7 @@
         <?php
         }
         ?>
-   
+        <a href="search.html" type="bottun">戻る</a> 
     </body>
 </html>
 
