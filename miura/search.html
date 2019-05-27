@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>連絡帳[検索,削除画面]</title>
+        
+    </head>
+    
+    <style>
+         p{
+            text-align: center;
+            font-size: 20px;
+        }
+        he{
+            text-align: center;
+            font-size: 20px;
+        }
+        </style>
+    <body>
+        
+        <div style="font-size: 14px"><p>連絡帳</p></div>
+        
+        <form name="form1" method="post" action="list.php">
+            name or phonenumber:
+            <br>
+            <input type="text" id ="sbox" name="search_key" class="form-control"><br>
+            <input type="submit" id="sbtn" value="検索する" class="btn btn-outline-primary"> 
+        </form>
+        <a href="from.html" type="bottun"><he>挿入画面へ</he></a> 
+    </body>
+</html>
