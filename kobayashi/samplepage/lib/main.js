@@ -75,7 +75,7 @@ var proc={
       // /
       else if(this.data.mark=="÷"){
         if(t.value==0){
-          this.data.num = 0;
+          this.data.num = "error";
         }
         else{
           this.data.num = this.data.num / (t.value*1);
