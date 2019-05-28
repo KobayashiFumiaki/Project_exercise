@@ -5,7 +5,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     </head>
-    
+    <style>
+    m{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
     <body>
         <?php
             $db_user = "project2019";    //ユーザー名
@@ -76,7 +81,8 @@
         <?php
         }
         ?>
-        <a href="search.html" type="bottun">戻る</a> 
+        <a href="search.html" type="bottun">戻る</a> <br>
+        <a href="index.html" type="bottun"><m>メインページに戻る</m></a> 
     </body>
 </html>
 
