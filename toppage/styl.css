@@ -6,6 +6,13 @@ body{
   color: #FFF;
 }
 
+h1{
+  color: #ACB6E5;
+  background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 div{
   text-align: center;
 }
