@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <title>Schedule_Calendar</title>
         <link rel="stylesheet" type="text/css" href="page_style.css">
-        <script src="script.js" type="text/javascript" defer></script>    
-    </head>                                                     
-    <body onload="showCalen(0)"> 
+        <script src="script.js" type="text/javascript" defer></script>
+    </head>
+    <body onload="showCalen(0)">
         <div id="cover">
             <div id="contents">
                 <center>
@@ -15,7 +15,7 @@
                 <p>
                     <input type="button" value="前月" onclick="showCalen(-1)">
                     <input type="button" value="次月" onclick="showCalen(1)">
-                </p> 
+                </p>
                 <div id="calen"></div>
                 <br>
                 <hr>
@@ -26,11 +26,11 @@
                     新規イベント登録:<br>
                     <textarea name="plan_text" rows="15" cols="50" value="" placeholder="20xx/xx/xx 『予定』形式で入力してください。"></textarea>
                     <input type="hidden" name="action" value="insert"><br>
-            
+
                     <input type="submit" value="送 信">
-                    <input type="button" value="イベント一覧" onClick="window.open('http://localhost/docs/project2019/Schedule_Calendar/list.php')"> 
+                    <input type="button" value="イベント一覧" onClick="window.open('http://localhost/docs/project2019/Schedule_Calendar/list.php')">
                 </form>
-                <a href="http://yahoo.co.jp" class="square_btn">メインページへ</a>
+                <a href="../toppage/main.html" class="square_btn">メインページへ</a>
                 </center>
             </div>
         </div>
