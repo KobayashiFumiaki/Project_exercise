@@ -8,52 +8,58 @@
   <link rel="stylesheet" href="css/dentaku_sample.css">
 </head>
 <body>
-  <div class="link-group">
-    <a href="http://localhost/docs/01/from.html" class="btn btn-success">スケジュール</a>
-    <a href="../../matama/アラーム/index.html" class="btn btn-danger">アラーム</a>
-    <a href="../../miura/from.html" class="btn btn-warning">連絡帳</a>
-  </div>
-
-  <p class="header">Web電卓</p>
-  <div id='calc'>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="式" id="formula">
-      <div class="input-group-append">
-        <button type="button" class="btn btn-secondary">C</button>
+  <div id="cover">
+    <div id="contents">
+      <div class="link-group">
+        <a href="http://localhost/docs/project2019/Schedule_Calendar/main.html" class="btn btn-success">スケジュール</a>
+        <a href="http://localhost/docs/project2019/Alarm_Timer/display.php" class="btn btn-danger">アラーム</a>
+        <a href="http://localhost/docs/project2019/Contact_Book/from.html">連絡帳</a>
       </div>
+
+      <p class="header">計算機</p>
+      <div id='calc'>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="式" id="formula">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-secondary">C</button>
+          </div>
+        </div>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">7</button>
+            <button type="button" class="btn btn-secondary">8</button>
+            <button type="button" class="btn btn-secondary">9</button>
+            <button type="button" class="btn btn-secondary">+</button>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">4</button>
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">-</button>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">×</button>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="Fourth group">
+            <button type="button" class="btn btn-secondary">.</button>
+            <button type="button" class="btn btn-secondary">0</button>
+            <button type="button" class="btn btn-secondary">=</button>
+            <button type="button" class="btn btn-secondary">÷</button>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <center><a href="http://localhost/docs/project2019/Main_Page/main.html" class="btn btn-info">メインページへ</a></center>
     </div>
-
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group" role="group" aria-label="First group">
-        <button type="button" class="btn btn-secondary">7</button>
-        <button type="button" class="btn btn-secondary">8</button>
-        <button type="button" class="btn btn-secondary">9</button>
-        <button type="button" class="btn btn-secondary">+</button>
-      </div>
-
-      <div class="btn-group" role="group" aria-label="Second group">
-        <button type="button" class="btn btn-secondary">4</button>
-        <button type="button" class="btn btn-secondary">5</button>
-        <button type="button" class="btn btn-secondary">6</button>
-        <button type="button" class="btn btn-secondary">-</button>
-
-      </div>
-
-      <div class="btn-group" role="group" aria-label="Third group">
-        <button type="button" class="btn btn-secondary">1</button>
-        <button type="button" class="btn btn-secondary">2</button>
-        <button type="button" class="btn btn-secondary">3</button>
-        <button type="button" class="btn btn-secondary">×</button>
-      </div>
-
-      <div class="btn-group" role="group" aria-label="Fourth group">
-        <button type="button" class="btn btn-secondary">.</button>
-        <button type="button" class="btn btn-secondary">0</button>
-        <button type="button" class="btn btn-secondary">=</button>
-        <button type="button" class="btn btn-secondary">÷</button>
-      </div>
     </div>
-  </div>
   <script src="lib/main.js"></script>
+
 </body>
 </html>
