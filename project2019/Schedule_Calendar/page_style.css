@@ -1,0 +1,79 @@
+#cover {
+    width:1200px;
+    background-color: #afeeee; //水色の部分
+    background-repeat:repeat-y;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#contents {
+    width: 1000px;
+    height: 800px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #f7a5a5; //赤色の部分
+        
+}
+
+table.calen { 
+    border-collapse:collapse; 
+    font-size:11pt; 
+    background-color:#f7d2d5; //ピンク(日にち表示部分)(セル)
+}
+table.calen th { 
+    border:1px solid #1115e0; //青(年月曜日表示部分)(枠)
+    height:30px; 
+}
+table.calen td { 
+    border:1px solid #1115e0; //青(日にち表示部分)(枠)
+    text-align:center; 
+    height:30px; 
+    width:30px; 
+}
+table.calen .sat { 
+    color:blue; 
+}
+table.calen .sun { 
+    color:red; 
+}
+table.calen .today { 
+    background-color:#ff7f16; //橙(今日の日付)
+    font-weight:bold; 
+}
+table.calen tr.bg1 { 
+    background-color:#ffc493; //肌色
+}
+table.calen tr.bg2 { 
+    background-color:#fff; 
+}
+
+.square_btn {
+    width: 130px;
+    height: 25px;
+    display: inline-block;
+    padding: 5px 5px;
+    text-decoration: none;
+    background: #f9f7e5;
+    color: #000000;
+    border-bottom: solid 4px #ed0000;
+    border-radius: 10px;
+}
+
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+#footer{
+    clear:both;
+    text-align:center;
+    font-size:13px;
+    color: #999999;
+    margin-top:20px;
+    margin-right:10px ;
+    margin-left:10px;
+    border-top:1px dotted #ed0000;
+}
