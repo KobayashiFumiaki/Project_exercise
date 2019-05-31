@@ -6,36 +6,59 @@
          <meta charset="utf-8">
         <title>連絡帳[挿入画面]</title>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <style>
-         p{
+<!--         <style>
+             
+             body{
+                background-image: linear-gradient(-90deg, #D0D2AC, #FFD280);
+                font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+             }
+             
+               
+             .link-group{
+  width:357px;
+  margin:0 auto 0 auto;
+  /*margin-top: 10%;*/
+  text-align: center;
+}
+         body{
             text-align: center;
+            /*margin:0 auto 0 auto;*/
             font-size: 20px;
         }
         he{
-            text-align: center;
+            text-align: right;
+            /*margin:0 auto 0 auto;*/
             font-size: 20px;
         }
     m{
-            text-align: center;
+            /*-align: center;*/
+            margin:0 auto 0 auto;
             font-size: 20px;
         }
-        </style>
+        </style>-->
+           <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+    <a href="http://localhost/docs/01/from.html" class="link-group">スケジュール</a>
+    <a href="../matama/アラーム/index.html" class="link-group">アラーム</a>
+    <a href="../koabayashi/samplepage/dentaku_sample.html" class="link-group">計算機</a>
         
-        <div style="font-size:14px"><p>連絡帳</p></div>
+        
+        <div style="font-size:26px"><p><x2>連絡帳</x2></p></div>
+    
         <form name="from1" method="post" action="view.php">
-            name:
+            <x1>name</x1>
             <br>
             <input type="text" name="name"  class="form-control"><br>
-            email address:<br>
+            <x1>email address</x1><br>
             <input type="text" name="email_address" class="form-control"><br>
-            phone number:<br>
+            <x1>phone number</x1><br>
             <input type="text" name="phone_number"class="form-control"><br>
-            
-            <input type="submit" value="送信" class="btn btn-outline-primary">
+            <input type="submit" value="送信" class="btn-stitch">
         </form>
-        <a href="search.html" type="bottun"><he>検索,削除画面へ</he></a> <br>
-        <m><a href="index.html" type="bottun">メインページに戻る</a> </m>
+        <a href="search.html" type="bottun" class="btn-partial-line">
+  <i class="fa fa-caret-right"></i>検索,削除画面へ</a> <br>
+        <a href="../toppage/main.html" type="bottun" class="btn-partial-line">
+  <i class="fa fa-caret-right"></i>メインページに戻る</a>
     </body>
 </html>
