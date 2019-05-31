@@ -3,14 +3,25 @@
         <title>連絡帳[削除確認画面]</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <style>
+<!--    <style>
+        .link-group{
+  width:357px;
+  margin:0 auto 0 auto;
+  margin-top: 10%;
+  text-align: center;
+}
     m{
             text-align: center;
             font-size: 20px;
         }
-    </style>
+    </style>-->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <body>
-    
+      <div class="link-group">
+    <a href="http://localhost/docs/01/from.html" class="btn btn-success">スケジュール</a>
+    <a href="../../matama/アラーム/index.html" class="btn btn-danger">アラーム</a>
+    <a href="../../miura/from.html" class="btn btn-warning">計算機</a>
+  </div>
         <?php
         $db_user = "project2019";    //ユーザー名
         $db_pass = "prg05";  //パスワード

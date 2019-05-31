@@ -51,7 +51,7 @@ require_once ("header.php");
 		</table>
 	</div>
 </div>
-    
+
     <div class="bg-success padding-y-5">
 	<div class="container padding-y-5">
 		<strong>アラームリスト(作動中)</strong>
@@ -96,37 +96,43 @@ require_once ("header.php");
 		</table>
 	</div>
 </div>
-    
-    
+
+
 	<div id="alarm_dialog" style="display: none;">
             セットした時刻になりました
             <input type="button" value="アラームを止める" onclick="alarm_stop()">
         </div>
-    
+
     <audio src="sound.mp3" id="sound"></audio>
-    
-    <?php
+
+		<?php
         $count=0;
+        //現在時間の取得
+        $timestamp = new DateTime();
+        $N_hour = $timestamp->format('G') + 7;
+        if($N_hour >24){
+            $N_hour -24;
+        }
+        if($timestamp->format('i') < 10){
+            $N_minute = preg_replace('/^0/','',$timestamp->format('i'));
+        }else{
+        $N_minute = $timestamp->format('i');
+        }
+
         foreach( $dbInfo->query ($sql) as $record) {
             if($record["switch"] == "入"){
+                if($record["hour"] == $N_hour && $record["minute"] == $N_minute){
                 $count =1;
                 $list_hour = $record["hour"];
                 $list_minute = $record["minute"];
+                }
             }
         }
-    
-        $count1 =0;
-        $count2 =0;
-        $count1 = $count;
-        $count2 = $count;
-        ?>
-    
-    <script defer>
 
-        
-    
-        
-    
+        ?>
+
+    <script>
+
     var hour = "<?php echo $list_hour ?>";
     var minute = "<?php echo $list_minute ?>";
     var alarm_set = false;
@@ -135,11 +141,12 @@ require_once ("header.php");
     var alarm_minute = 0;
     var alarm_dialog = document.getElementById("alarm_dialog");
     var sound = document.getElementById("sound");
-        
+
     var time = new Date;
-        
+
+
     //音楽ファイルセット
-        if ("<?php echo $count1; ?>;" != 0) {
+        if ("<?php echo $count; ?>;" != 0) {
                 alarm_hour = hour;
                 alarm_minute = minute;
                     sound.load();
@@ -150,23 +157,20 @@ require_once ("header.php");
                 sound.pause();
                 sound.currentTime = 0;
             }
-        
+
     sound.onended = function() {
                 alarm_stop();
             };
-        
+
         function main() {
                 var time = new Date;
 
-                if (0 != "<?php echo $count1 ?>" && alarm_hour == time.getHours() && alarm_minute == time.getMinutes()) {
-                    "<?php echo $count1 = 0; ?>";
+                if (1 == "<?php echo $count ?>" && alarm_hour == time.getHours() && alarm_minute == time.getMinutes()) {
+                    "<?php echo $count = 0; ?>";
                     sound.play();
                     alarm_dialog.style.display = "block";
-                } else if (0 != "<?php echo $count2 ?>" && alarm_minute != time.getMinutes()) {
-                    "<?php echo $count1; ?>";
                 }
-
-                setTimeout(main, 1000-time.getMilliseconds());
+                setTimeout(main,60000);
             }
     main();
     </script>

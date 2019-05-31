@@ -6,27 +6,19 @@
         <title>連絡帳[検索,削除画面]</title>
         
     </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     
-    <style>
-         p{
-            text-align: center;
-            font-size: 20px;
-        }
-        he{
-            text-align: center;
-            font-size: 20px;
-        }
-    m{
-            text-align: center;
-            font-size: 20px;
-        }
-        </style>
     <body>
+          <div class="link-group">
+    <a href="http://localhost/docs/01/from.html" class="btn btn-success">スケジュール</a>
+    <a href="../../matama/アラーム/index.html" class="btn btn-danger">アラーム</a>
+    <a href="../../miura/from.html" class="btn btn-warning">計算機</a>
+  </div>
         
         <div style="font-size: 14px"><p>連絡帳</p></div>
         
         <form name="form1" method="post" action="list.php">
-            name or phonenumber:
+            name or phonenumber
             <br>
             <input type="text" id ="sbox" name="search_key" class="form-control"><br>
             <input type="submit" id="sbtn" value="検索する" class="btn btn-outline-primary"> 

@@ -1,0 +1,80 @@
+body{
+    background-image: linear-gradient(-90deg, #D0D2AC, #FFD280);
+    font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    text-align: center;
+
+}
+             
+               
+.link-group {
+  display: inline-block;
+  padding: 0.1em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border-left: solid 6px #ff7c5c;/*左線*/
+  color: #ff7c5c;/*文字色*/
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.link-group:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+.btn-partial-line {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  border-bottom: solid 3px #668ad8;
+  border-left: solid 3px #668ad8;
+  color: #668ad8;
+  transition: .4s;
+  margin-top: 1%;
+}
+
+.btn-partial-line:hover {
+  padding-left: 0.7em;
+  padding-right: 0.3em;
+}
+
+.btn-stitch {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+  border: dashed 1px #FFF;
+}
+
+.btn-stitch:hover {
+  border: dotted 1px #FFF;
+}
+
+x1 {
+   padding: 0.1em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+x2 {
+  position: relative;
+  padding: 0.1em;
+  background: #a6d3c8;
+  color: white;
+}
+
+x2::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
