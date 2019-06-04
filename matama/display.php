@@ -178,5 +178,9 @@ require_once ("header.php");
     // データベースの切断
     $dbInfo = null;
 		?>
+
+		<?php
+require_once ("footer.php");
+?>
 </body>
 </html>
