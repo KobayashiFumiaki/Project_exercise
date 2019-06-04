@@ -1,25 +1,25 @@
 <?php
-class Pencil {
-	private $id;    // 商品ID
-	private $maker; // メーカー
-	private $hardness; // 硬度（HかB）
-	private $price; // 価格
+class Alarm {
+	private $number;    // ID
+	private $hour; // 時間（時）
+	private $minute; // 時間（分）
+	private $switch; // ON・OFF
 
 	// コンストラクタ
-	public function __construct($id, $maker, $hardness, $price) {
-		$this->id = $id;
-		$this->maker = $maker;
-		$this->hardness = $hardness;
-		$this->price = $price;
+	public function __construct($number, $hour, $minute, $switch) {
+		$this->number = $number;
+		$this->hour = $hour;
+		$this->minute = $mimute;
+		$this->switch = $switch;
 	}
 
 	// プロパティのデータを表示するメソッド
 	public function printData() {
 		echo "<tr>";
-		echo "<td>". $this->id. "</td>";
-		echo "<td>". $this->maker. "</td>";
-		echo "<td>". $this->hardness. "</td>";
-		echo "<td>". $this->price. "</td>";
+		echo "<td>". $this->number. "</td>";
+		echo "<td>". $this->hour. "</td>";
+		echo "<td>". $this->minute. "</td>";
+		echo "<td>". $this->switch. "</td>";
 		echo "</tr>";
 	}
 }

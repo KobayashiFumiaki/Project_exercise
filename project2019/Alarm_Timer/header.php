@@ -1,5 +1,13 @@
 <table class="table table-bordered">
+	<div class="link-group">
+		<center>
+				<a href="http://localhost/docs/01/from.html" class="btn bg-error ">スケジュール</a>
+				<a href="../../kobayashi/samplepage/dentaku_sample.html" class="btn bg-violet">電卓</a>
+				<a href="../../miura/from.html" class="btn btn-warning">連絡帳</a>
+		</center>
+    </div>
 	<thead>
+
 		<tr>
 			<th colspan="4" class="bg-success padding-y-5 text-center">
 				<div class="container padding-y-5">アラーム　操作メニュー</div>
