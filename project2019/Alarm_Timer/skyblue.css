@@ -106,9 +106,76 @@ button{
   color: #fff;
 }
 
+.bg-yelllow {
+    background-color:yellow;
+    color: #fff;
+}
+
+
 
 
 /*    */
+
+html, body, div, col-md-, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent; }
+
+@media screen and (max-device-width: 480px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; } }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body > iframe {
+  display: none; }
+
+
+
+.row {
+  margin-left: -20px;
+  margin-right: -20px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table;
+    line-height: 0; }
+  .row:after {
+    clear: both; }
+
+
+
 .bg-main {
   background-color: #3498DB;
   color: #fff; }
@@ -203,6 +270,22 @@ button{
     background: #3498DB;
     color: #fff; }
 
+
+    .btn2 {
+    display: inline-block;
+    min-width: 120px;
+    padding: 10px 25px;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+    color: #fff; }
+
+
     button, input[type="submit"], input[type="button"] {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
@@ -213,6 +296,16 @@ button{
       .padding-y-5 {
         padding-top: 5px;
         padding-bottom: 5px; }
+
+
+        table {
+  max-width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  text-align: left; }
 
         .table {
           width: 100%;
@@ -272,8 +365,64 @@ button{
             border-left: 1px solid #ddd; }
 
 
+        body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+  background-color: #fff;
+  color: #555555; }
+
+
+
 @-moz-document url-prefix() {
     select, select.form-control {
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPSczNicgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBkPSdNMTcuNDE4IDYuMTA5YzAuMjcyLTAuMjY4IDAuNzA5LTAuMjY4IDAuOTc5IDBzMC4yNzEgMC43MDEgMCAwLjk2OWwtNy45MDggNy44M2MtMC4yNyAwLjI2OC0wLjcwNyAwLjI2OC0wLjk3OSAwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEgMC0wLjk2OXMwLjcwOS0wLjI2OCAwLjk3OSAwbDcuNDE5IDcuMTQxIDcuNDE4LTcuMTQxeicgZmlsbD0nIzQ0NDQ0NCc+PC9wYXRoPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 36px; } }
+
+input[type="text"].form-control, input[type="password"].form-control, input[type="date"].form-control, input[type="datetime"].form-control, input[type="email"].form-control, input[type="number"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="time"].form-control, input[type="url"].form-control, select.form-control, textarea.form-control {
+  height: 2.625em;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #555;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  transition: border-color 0.25s, color 0.25s; }
+  input[type="text"].form-control:focus, input[type="password"].form-control:focus, input[type="date"].form-control:focus, input[type="datetime"].form-control:focus, input[type="email"].form-control:focus, input[type="number"].form-control:focus, input[type="search"].form-control:focus, input[type="tel"].form-control:focus, input[type="time"].form-control:focus, input[type="url"].form-control:focus, select.form-control:focus, textarea.form-control:focus {
+    border: 2px solid #3498DB;
+    color: #111;
+    outline: none; }
+  input[type="text"].form-control.error, .error input[type="text"].form-control, input[type="password"].form-control.error, .error input[type="password"].form-control, input[type="date"].form-control.error, .error input[type="date"].form-control, input[type="datetime"].form-control.error, .error input[type="datetime"].form-control, input[type="email"].form-control.error, .error input[type="email"].form-control, input[type="number"].form-control.error, .error input[type="number"].form-control, input[type="search"].form-control.error, .error input[type="search"].form-control, input[type="tel"].form-control.error, .error input[type="tel"].form-control, input[type="time"].form-control.error, .error input[type="time"].form-control, input[type="url"].form-control.error, .error input[type="url"].form-control, select.form-control.error, .error select.form-control, textarea.form-control.error, .error textarea.form-control {
+    border-color: #E74C3C; }
+  input[type="text"].form-control.warning, .warning input[type="text"].form-control, input[type="password"].form-control.warning, .warning input[type="password"].form-control, input[type="date"].form-control.warning, .warning input[type="date"].form-control, input[type="datetime"].form-control.warning, .warning input[type="datetime"].form-control, input[type="email"].form-control.warning, .warning input[type="email"].form-control, input[type="number"].form-control.warning, .warning input[type="number"].form-control, input[type="search"].form-control.warning, .warning input[type="search"].form-control, input[type="tel"].form-control.warning, .warning input[type="tel"].form-control, input[type="time"].form-control.warning, .warning input[type="time"].form-control, input[type="url"].form-control.warning, .warning input[type="url"].form-control, select.form-control.warning, .warning select.form-control, textarea.form-control.warning, .warning textarea.form-control {
+    border-color: #F1C000; }
+  input[type="text"].form-control.success, .success input[type="text"].form-control, input[type="password"].form-control.success, .success input[type="password"].form-control, input[type="date"].form-control.success, .success input[type="date"].form-control, input[type="datetime"].form-control.success, .success input[type="datetime"].form-control, input[type="email"].form-control.success, .success input[type="email"].form-control, input[type="number"].form-control.success, .success input[type="number"].form-control, input[type="search"].form-control.success, .success input[type="search"].form-control, input[type="tel"].form-control.success, .success input[type="tel"].form-control, input[type="time"].form-control.success, .success input[type="time"].form-control, input[type="url"].form-control.success, .success input[type="url"].form-control, select.form-control.success, .success select.form-control, textarea.form-control.success, .success textarea.form-control {
+    border-color: #1BBC9B; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select, select.form-control {
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPSczNicgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBkPSdNMTcuNDE4IDYuMTA5YzAuMjcyLTAuMjY4IDAuNzA5LTAuMjY4IDAuOTc5IDBzMC4yNzEgMC43MDEgMCAwLjk2OWwtNy45MDggNy44M2MtMC4yNyAwLjI2OC0wLjcwNyAwLjI2OC0wLjk3OSAwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEgMC0wLjk2OXMwLjcwOS0wLjI2OCAwLjk3OSAwbDcuNDE5IDcuMTQxIDcuNDE4LTcuMTQxeicgZmlsbD0nIzQ0NDQ0NCc+PC9wYXRoPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 36px; } }
+
+@-moz-document url-prefix() {
+  select, select.form-control {
     background-color: #fff;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPSczNicgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBkPSdNMTcuNDE4IDYuMTA5YzAuMjcyLTAuMjY4IDAuNzA5LTAuMjY4IDAuOTc5IDBzMC4yNzEgMC43MDEgMCAwLjk2OWwtNy45MDggNy44M2MtMC4yNyAwLjI2OC0wLjcwNyAwLjI2OC0wLjk3OSAwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEgMC0wLjk2OXMwLjcwOS0wLjI2OCAwLjk3OSAwbDcuNDE5IDcuMTQxIDcuNDE4LTcuMTQxeicgZmlsbD0nIzQ0NDQ0NCc+PC9wYXRoPjwvc3ZnPg==);
     background-repeat: no-repeat;

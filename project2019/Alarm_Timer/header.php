@@ -1,10 +1,12 @@
 <table class="table table-bordered">
 	<div class="link-group">
+        <tr>
 		<center>
-				<a href="http://localhost/docs/01/from.html" class="btn bg-error ">スケジュール</a>
-				<a href="../../kobayashi/samplepage/dentaku_sample.html" class="btn bg-violet">電卓</a>
-				<a href="../../miura/from.html" class="btn btn-warning">連絡帳</a>
+				<a href="http://localhost/project2019/Schedule_Calendar/main.html" class="btn2 bg-error ">スケジュール</a>
+				<a href="http://localhost/project2019/Calculator/dentaku_sample.html" class="btn2 bg-violet">電卓</a>
+				<a href="http://localhost/project2019/Contact_Book/from.html" class="btn2 bg-yelllow">連絡帳</a>
 		</center>
+            </tr>
     </div>
 	<thead>
 
@@ -18,28 +20,28 @@
 		<tr>
             <td class="bg-main padding-y-5 text-center">
 				<div class="container padding-y-5">
-					<a href="http://localhost/docs/project2019/Alarm_Timer/display.php" class="color-white">
+					<a href="http://localhost/project2019/Alarm_Timer/display.php" class="color-white">
 						<strong>表示</strong>
 					</a>
 				</div>
 			</td>
 			<td class="bg-main padding-y-5 text-center">
 				<div class="container padding-y-5">
-					<a href="http://localhost/docs/project2019/Alarm_Timer/insertIndex.php" class="color-white">
+					<a href="http://localhost/project2019/Alarm_Timer/insertIndex.php" class="color-white">
 						<strong>追加</strong>
 					</a>
 				</div>
 			</td>
 			<td class="bg-main padding-y-5 text-center">
 				<div class="container padding-y-5">
-					<a href="http://localhost/docs/project2019/Alarm_Timer/updateIndex.php" class="color-white">
+					<a href="http://localhost/project2019/Alarm_Timer/updateIndex.php" class="color-white">
 						<strong>編集</strong>
 					</a>
 				</div>
 			</td>
 			<td class="bg-main padding-y-5 text-center">
 				<div class="container padding-y-5">
-					<a href="http://localhost/docs/project2019/Alarm_Timer/deleteIndex.php" class="color-white">
+					<a href="http://localhost/project2019/Alarm_Timer/deleteIndex.php" class="color-white">
 						<strong>削除</strong>
 					</a>
 				</div>
