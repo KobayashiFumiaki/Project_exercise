@@ -103,21 +103,21 @@ function showCalen(n) {
                 
         if(flag == 1 && i == today){
             if(holidays[i] == 1 || col == 0){
-                htmlStr += "<td class='today sun'><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td class='today sun'><center><button id='"+i+"' onclick='DayBtn(this)'>";
             }else if(col == 6){
-                htmlStr += "<td class='today sat'><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td class='today sat'><center><button id='"+i+"' onclick='DayBtn(this)'>";
             }else{
-                htmlStr += "<td class='today'><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td class='today'><center><button id='"+i+"' onclick='DayBtn(this)'>";
             } 
         }else if(holidays[i] == 1 || col == 0){
-                htmlStr += "<td class='sun'><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td class='sun'><center><button id='"+i+"' onclick='DayBtn(this)'>";
         }else if(col == 6){
-                htmlStr += "<td class='sat'><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td class='sat'><center><button id='"+i+"' onclick='DayBtn(this)'>";
         }else{
-                htmlStr += "<td><button id='"+i+"' onclick='DayBtn(this)'>";
+                htmlStr += "<td><center><button id='"+i+"' onclick='DayBtn(this)'>";
         } 
     
-        htmlStr += i + "</button></td>";
+        htmlStr += i + "</button></center></td>";
         if(col == 6){ 
             htmlStr += "</tr>\n"; 
             col=0; 
