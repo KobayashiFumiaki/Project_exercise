@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule_Calendar</title>
+    <link rel="stylesheet" type="text/css" href="page_style.css">
+    <script src="script.js" type="text/javascript" defer></script>    
+</head>                                                     
+<body onload="showCalen(0)"> 
+    <div id="cover">
+        <div id="contents">
+            <center>
+            <br>
+            <a href="../Calculator/dentaku_sample.html" class="square_btn_a">電卓</a>
+            <a href="../Alarm_Timer/display.php" class="square_btn_b">アラーム</a>
+            <a href="../Contact_Book/form.html" class="square_btn_c">連絡帳</a>
+            <hr>
+            <h1 class="title-shadow">カレンダー型スケジュール帳</h1>
+            <hr>
+            <p>
+                <input type="button" value="前月" onclick="showCalen(-1)">
+                <input type="button" value="次月" onclick="showCalen(1)">
+            </p> 
+            <div id="calen"></div>
+            <br>
+            <hr>
+            <p id="printYM"></p>
+            <p id="outputday"></p>
+            <hr>
+            <form method="post" action="list.php">
+                新規イベント登録:<br>
+                <textarea name="plan_text" rows="15" cols="50" value="" placeholder="20xx/xx/xx 『予定』形式で入力してください。"></textarea>
+                <input type="hidden" name="action" value="insert"><br>
+                <input type="submit" value="送 信">
+                <input type="button" value="イベント一覧" onClick="location.href='list.php'"> 
+            </form>
+            <br><a href="../../main.html" class="square_btn">メインページへ</a><br>
+            <br>
+            </center>
+        </div>
+    </div>
+    <div id="footer"><!--フッター部分-->
+        <p>Created by Project2019 - 5Groupe // Schedule_Calendar</p>
+    </div>
+</body>
+</html>
+
